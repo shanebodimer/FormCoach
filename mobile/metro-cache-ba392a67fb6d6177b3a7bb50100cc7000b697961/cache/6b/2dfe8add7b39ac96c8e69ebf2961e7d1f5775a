@@ -1,0 +1,178 @@
+__d(function (global, _require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _react2 = _require(_dependencyMap[0], "react");
+
+  var _react3 = _interopRequireDefault(_react2);
+
+  var _index = _require(_dependencyMap[1], "./../node_modules/react-transform-hmr/lib/index.js");
+
+  var _index2 = _interopRequireDefault(_index);
+
+  var _jsxFileName = "/Users/shanebodimer/Desktop/GreekWeekApp/panels/score_panel.js";
+
+  var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+  var _reactNative = _require(_dependencyMap[2], "react-native");
+
+  var _axios = _require(_dependencyMap[3], "axios");
+
+  var _axios2 = _interopRequireDefault(_axios);
+
+  var _house_card = _require(_dependencyMap[4], "../components/house_card.js");
+
+  var _house_card2 = _interopRequireDefault(_house_card);
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _components = {
+    App: {
+      displayName: "App"
+    }
+  };
+
+  var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+    filename: "/Users/shanebodimer/Desktop/GreekWeekApp/panels/score_panel.js",
+    components: _components,
+    locals: [module],
+    imports: [_react3.default]
+  });
+
+  function _wrapComponent(id) {
+    return function (Component) {
+      return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+    };
+  }
+
+  var App = _wrapComponent("App")(function (_React$Component) {
+    _inherits(App, _React$Component);
+
+    function App(props) {
+      _classCallCheck(this, App);
+
+      var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+      _this.state = {
+        houses: false,
+        refreshing: false
+      };
+      _this.refresh = _this.refresh.bind(_this);
+      return _this;
+    }
+
+    _createClass(App, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var _this2 = this;
+
+        _axios2.default.get("https://sheets.googleapis.com/v4/spreadsheets/1ussRz_MYmSR-Hhj98cez87DOOl5Txl5z1hK1mhT9sVM/values/G2:J?key=AIzaSyA1lvmJgQeRYaoCPkjOZt7kI1kv2dyRch8").then(function (response) {
+          _this2.setState({
+            houses: response.data.values
+          });
+        });
+      }
+    }, {
+      key: "refresh",
+      value: function refresh() {
+        var _this3 = this;
+
+        _axios2.default.get("https://sheets.googleapis.com/v4/spreadsheets/1ussRz_MYmSR-Hhj98cez87DOOl5Txl5z1hK1mhT9sVM/values/G2:J?key=AIzaSyA1lvmJgQeRYaoCPkjOZt7kI1kv2dyRch8").then(function (response) {
+          _this3.setState({
+            houses: response.data.values
+          });
+        });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        return _react3.default.createElement(
+          _reactNative.ScrollView,
+          {
+            style: styles.container,
+            horizontal: false,
+            refreshControl: _react3.default.createElement(_reactNative.RefreshControl, {
+              colors: ['#fff'],
+              tintColor: "#fff",
+              refreshing: this.state.refreshing,
+              onRefresh: this.refresh,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 45
+              }
+            }),
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 41
+            }
+          },
+          this.state.houses && this.state.houses.map(function (house, i) {
+            return _react3.default.createElement(_house_card2.default, {
+              key: i,
+              rank: i + 1,
+              house: house[0],
+              score: house[1],
+              color: house[2],
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 57
+              }
+            });
+          }),
+          _react3.default.createElement(_reactNative.Text, {
+            style: {
+              width: '100%',
+              height: 20
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 69
+            }
+          })
+        );
+      }
+    }]);
+
+    return App;
+  }(_react3.default.Component));
+
+  exports.default = App;
+
+  var styles = _reactNative.StyleSheet.create({
+    container: {
+      paddingTop: 10,
+      overflow: 'scroll',
+      backgroundColor: '#777171'
+    },
+    house: {},
+    card: {
+      backgroundColor: '#483F40',
+      padding: 20,
+      marginLeft: 10,
+      marginRight: 10,
+      marginBottom: 10,
+      borderRadius: 4,
+      flexGrow: 4,
+      fontSize: 22,
+      fontWeight: 'bold',
+      shadowColor: '#000',
+      shadowOffset: {
+        width: 0,
+        height: 2
+      },
+      shadowOpacity: 0.12,
+      shadowRadius: 2,
+      flex: 1,
+      alignItems: 'center',
+      flexDirection: 'row',
+      justifyContent: 'space-between'
+    }
+  });
+});

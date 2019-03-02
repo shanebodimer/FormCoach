@@ -1,0 +1,1250 @@
+[
+      {
+        "id": 0,
+        "name": "Opening Games",
+        "SubEvents": [
+          {
+            "id": 0,
+            "name": "Corn Hole",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined in the Google Drive File."
+              },
+              {
+                "id": 1,
+                "subrule": "Each team will consist of 2 members who participate in the single elimination tournament. The same members must participate in all the games played and no substitutions are allowed barring injury or unforeseen circumstances at the discretion of Games Chair, Stephen Payne."
+              },
+              {
+                "id": 2,
+                "subrule": "Two boards of the same dimensions will be set up facing each other with 27 feet between the front edge of each board and each team will be provided 4 bags."
+              },
+              {
+                "id": 3,
+                "subrule": "One person from each team will throw on the left side of a board and the other teammate will throw from the right side of the opposite board."
+              },
+              {
+                "id": 4,
+                "subrule": "The first team to toss will be determined by a coin flip performed by the IFC or Panhel member at the game."
+              },
+              {
+                "id": 5,
+                "subrule": "The winner of the coin flip will toss first and then the opponent on the same side will toss a bag next. The two participants on the same side will take turns throwing until all bags have been thrown. "
+              },
+              {
+                "id": 6,
+                "subrule": "A tossed bag may not touch the ground.  If it hits the ground and bounces up on the board or if it is hanging off the board and touching the ground the bag must be removed from the playing field before any other bags are thrown."
+              },
+              {
+                "id": 7,
+                "subrule": "If a toss is made with the throwers foot being past the front edge of the board then a foul will be called and the tossed bag must be removed from the playing field before any other bags are thrown."
+              },
+              {
+                "id": 8,
+                "subrule": "When all 8 bags have been tossed to the other side, then the score will be tallied up and the team with more points scored in that round will get to throw first in the next round."
+              },
+              {
+                "id": 9,
+                "subrule": "A bag remaining on the board will be worth one point while a bag that makes it into the whole will be worth 3 points."
+              },
+              {
+                "id": 10,
+                "subrule": "For scoring purposes, equal points will cancel out. For example, if one team scores 6 points in a round and the other team scored 3 points in the same round then the first team will be awarded 3 points for the round. If both teams tie in points for the round there will be no points awarded and whoever threw first will throw first again in the next round."
+              },
+              {
+                "id": 11,
+                "subrule": "Scoring at the end of a round will be determined by the bags remaining on the board, so bags knocked off during play will not be counted."
+              },
+              {
+                "id": 12,
+                "subrule": "The first team to reach 21 points with a lead of 2 or more points will win the game."
+              },
+              {
+                "id": 13,
+                "subrule": "Any attempts by competitors or bystanders to distract the thrower will result in a redo of the throw that was tampered with. Determining if an event was a significant distraction to thrower will be determined by the IFC or/or Panhel representative working the event."
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "name": "Chariot Race",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined previously in this document."
+              },
+              {
+                "id": 1,
+                "subrule": "All chariots must have a rider wearing a toga while the participating team is competing."
+              },
+              {
+                "id": 2,
+                "subrule": "Any interference with another chariot will cause the interfering party’s team to be disqualified.  This includes all members of a house and not just those competing in the race.  The team that was interfered with will have another opportunity to run the race."
+              },
+              {
+                "id": 3,
+                "subrule": "Chariots must be supplied by the participating house, be 2-wheeled, with one axel, and can have only one tongue."
+              },
+              {
+                "id": 4,
+                "subrule": "The course will consist of cones. Chariots must circle the cones without knocking them over. Knocking the cones over can result in 3-second penalty, 10-second penalty, or disqualification depending on the severity of the offense. This is up to the discretion of the Council Representative judging the event."
+              },
+              {
+                "id": 5,
+                "subrule": "The course race will be composed of two teams, each consisting of four members, powering the chariot.  Each team is to run one full lap."
+              },
+              {
+                "id": 6,
+                "subrule": "Hand offs during the race must take place within the designated area."
+              },
+              {
+                "id": 7,
+                "subrule": "No women may participate in a fraternity race.  No men may participate in a sorority race."
+              },
+              {
+                "id": 8,
+                "subrule": "All participating members and the chariot must cross the finish line before their time is stopped."
+              },
+              {
+                "id": 9,
+                "subrule": "Each team will be able to try one practice run around track with an exchange. NO MORE will be allowed."
+              },
+              {
+                "id": 10,
+                "subrule": "If a runner who is pulling the chariot falls and cannot get back into pulling the chariot they will NOT be disqualified, as due to the fact that this should not help them get a faster time, however, this does NOT mean runners may hop off early it must be accidental and will be determined by the Council representative judging the event. If it is determined that the fall was not accidental the team will be disqualified."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Ultimate Frisbee",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined in this document."
+              },
+              {
+                "id": 1,
+                "subrule": "Each team will have seven (7) members entered into a single elimination tournament determined by last year’s results."
+              },
+              {
+                "id": 2,
+                "subrule": "The losers in the semi-final round will compete against each other for third place."
+              },
+              {
+                "id": 3,
+                "subrule": "Each normal game will consist of two 6-minute halves with a 2-minute half time.  The championship game will consist of two 8-minute halves with a 2-minute half time.  There will be a running clock; when the disc goes out of bounds the clock does not stop.  If a team is found throwing the disc out intentionally in order to maintain a lead, that team will automatically forfeit.  If the disk goes over the barbed wire fence surrounding the south field then the clock WILL STOP."
+              },
+              {
+                "id": 4,
+                "subrule": "To determine which team will throw off first the referee will assign one team heads and the other tails and whichever team wins has the option to pick whether to throw, receive or defer, and the opposing team has the choice of which side they would like to start on. If the winning team differs then the other team will choose whether to throw or receive and the winning team will pick which side to start on. At the start of the second half the team that received for the first half will now throw. The Frisbee will be thrown off at the beginning of the game, after each goal, and at half time."
+              },
+              {
+                "id": 5,
+                "subrule": "Games will be officiated as per typical IM Ultimate Frisbee rules outlined below.  PLAYERS CALL THEIR OWN FOULS.  The official will intervene if necessary."
+              },
+              {
+                "id": 6,
+                "subrule": "There will be one (1) point awarded for each goal."
+              },
+              {
+                "id": 7,
+                "subrule": "Each team playing must supply two (2) line judges."
+              },
+              {
+                "id": 8,
+                "subrule": "Teams must check-in to each game area within five minutes of being paged over the loudspeaker.  If a team fails to do so, the game will be forfeit.  Teams will be called when the time comes for them to report."
+              },
+              {
+                "id": 9,
+                "subrule": "In the case of a tie at the end of regulation, an overtime period will begin after a 2-minute break.  To determine who receives the Frisbee first there will be a coin toss with the same rules as starting the game shown in rule #5. The overtime period will be sudden death."
+              },
+              {
+                "id": 10,
+                "subrule": "Substitutions will only be permitted after each point.  There will be no substitutions during game play unless an injury occurs."
+              },
+              {
+                "id": 11,
+                "subrule": "Players must wear rubber and molded cleats or sneakers.  NO METAL CLEATS WILL BE PERMITTED."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Homerun Derby",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined previously in this document."
+              },
+              {
+                "id": 1,
+                "subrule": "Each house may report to the course at their discretion during Opening Games."
+              },
+              {
+                "id": 2,
+                "subrule": "Each house must supply a pitcher and a batter to participate."
+              },
+              {
+                "id": 3,
+                "subrule": "The balls and bat will be provided by IFC."
+              },
+              {
+                "id": 4,
+                "subrule": "Each player will get 10 outs.  If a player swings and the ball does not qualify as a homerun, it will be recorded as an out (i.e. foul balls, ground balls, and pop flies, etc. will all qualify as an out)"
+              },
+              {
+                "id": 5,
+                "subrule": "There will be a starting line.  If the batter crosses the starting line during the swing, then that ball will be counted as an out."
+              },
+              {
+                "id": 6,
+                "subrule": "The ball must land on or over the homerun line to count as a homerun.  IT CANNOT ROLL."
+              },
+              {
+                "id": 7,
+                "subrule": "If a tie should occur, there will be a 5-swing swing off.  Each batter will receive five pitches and five pitches only.  The batter with the most home runs after the swing off will receive first place.  This will continue until a winner can be named."
+              },
+              {
+                "id": 8,
+                "subrule": "The homerun distance for Fraternities is 225 feet.  The distance for Sororities is 100 feet."
+              },
+              {
+                "id": 9,
+                "subrule": "Each participant must complete the full game after they have started.  You cannot come back and complete your game at a later time.  If a team leaves before they reach 10 outs, the score they have at the time of departure will count as their final score."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Volleyball",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined in this document."
+              },
+              {
+                "id": 1,
+                "subrule": "Each house will have a 3-man team that will be entered into a single elimination tournament bracket.  The bracket will be decided by last year’s results."
+              },
+              {
+                "id": 2,
+                "subrule": "The losers in the semi-final rounds will compete against each other for third place."
+              },
+              {
+                "id": 3,
+                "subrule": "Substitutions will only be permitted between matches.  Teams will only be allowed one substitution between each match.  Substitution will not be permitted during a game play unless an injury occurs."
+              },
+              {
+                "id": 4,
+                "subrule": "A coin toss will decide which team serves first."
+              },
+              {
+                "id": 5,
+                "subrule": "Points will be awarded as follows: Points will be awarded by rally scoring. Teams will play to 15 points. Teams must win by 2 points."
+              },
+              {
+                "id": 6,
+                "subrule": "The teams will play three sets, alternating sides between each set.  The winner of two sets will be the winner of the match."
+              },
+              {
+                "id": 7,
+                "subrule": "In the event of a third set, the teams will switch sides after the first team has reached eight (8) points.  There is no more switching sides after this point in the game."
+              },
+              {
+                "id": 8,
+                "subrule": "For the Championship match, the team ranked as the higher seed is allowed to choose which court the match will be played on.  (If both courts are available, this will also apply for semi-final matches).  If both teams are unseeded, a coin flip will determine which team gets to choose which court the match will be played on."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Idi-Odyssey",
+        "SubEvents": [
+          {
+            "id": 0,
+            "name": "Impersonation Contest",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "The contestant may choose any famous person, GOD, teacher, etc. as long as it is approved by the Games Chair, Cameron Ziegler, by Tuesday, September 5th. It will be first come, first serve with no repeats for the impersonation."
+              },
+              {
+                "id": 1,
+                "subrule": "The contestant will be allowed to describe himself/herself and/or perform a short skit."
+              },
+              {
+                "id": 2,
+                "subrule": "There will be a 1 minute 30 second time limit. You will be cut off after your time is up."
+              },
+              {
+                "id": 3,
+                "subrule": "Judging criteria will include creativity, originality, costume, and humor."
+              },
+              {
+                "id": 4,
+                "subrule": "Any inappropriateness (drug references, nudity, racism, negativity directed at another student group) will be grounds for disqualification."
+              },
+              {
+                "id": 5,
+                "subrule": "The Godz, Goddesses, and Titanz (55%) and preselected judges (45%) will judge this event."
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "name": "Trivia Contest",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Each house will have a team that consists of no more than three people. Teams of one or two people will be allowed."
+              },
+              {
+                "id": 1,
+                "subrule": "The contest will consist of 30 questions with each being worth one point."
+              },
+              {
+                "id": 2,
+                "subrule": "Each team will receive a question from one of three categories. Greek mythology, entertainment(T.V., movies or actors), or random trivia and have one minute to discuss amongst themselves before writing down their answers on a piece of paper provided by IFC."
+              },
+              {
+                "id": 3,
+                "subrule": "At the end of the discussion period, all answers must be written down and handed to a designated representative"
+              },
+              {
+                "id": 4,
+                "subrule": "Any papers not turned in by the allotted time will not be counted"
+              },
+              {
+                "id": 5,
+                "subrule": "No cell phones, computers, or any other electronic devices may be used for answering questions."
+              },
+              {
+                "id": 6,
+                "subrule": "In the event of a tie, teams who are affected will be given a question and each team to get the question right will progress until there is only one team left. This process will be continued until there is a clear winner."
+              },
+              {
+                "id": 7,
+                "subrule": "Evidence of any kind of cheating will result in the elimination of the offending team"
+              },
+              {
+                "id": 8,
+                "subrule": "Any sort of attempt at cheating will be grounds for automatic disqualification at the discretion of the officiating Council representative. "
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Egg Toss",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Each team will consist of 2 players from the respective house."
+              },
+              {
+                "id": 1,
+                "subrule": "There will be a 2-yard gap between the two players on each team at the start."
+              },
+              {
+                "id": 2,
+                "subrule": "Every time a throw is made and caught, the person standing opposite the starting line will take a step back, while the person standing on the starting line will remain there for the entirety of the event."
+              },
+              {
+                "id": 3,
+                "subrule": "Teams may increase the throwing distance between them by any amount after the first throw and each throw thereafter.  The distance will be recorded BEFORE the throw is made.  The catcher is allowed to take ONE step during the catch; he or she must keep one foot planted at all times.  If the catcher moves otherwise, the team will be disqualified and the last successful throw will be counted."
+              },
+              {
+                "id": 4,
+                "subrule": "The longest successful catch will be recorded for each team."
+              },
+              {
+                "id": 5,
+                "subrule": "A Council representative will inspect the egg for cracks after each throw.  If it is not cracked or broken, that team can continue playing."
+              },
+              {
+                "id": 6,
+                "subrule": "If the egg is not touched by the teammate catching it white attempting a throw, the team is out even if the egg remains intact."
+              },
+              {
+                "id": 7,
+                "subrule": "You may only use your hands to catch the egg (not your shirt, hat, etc.)"
+              },
+              {
+                "id": 8,
+                "subrule": "Any sort of attempt at cheating will be grounds for automatic disqualification at the discretion of the officiating Council representative."
+              },
+              {
+                "id": 9,
+                "subrule": "Winner: The two-person team that tosses an egg the farthest distance without dropping or breaking the egg."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "3-Legged Race",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Each team of two will race down around a cone and return past the starting line."
+              },
+              {
+                "id": 1,
+                "subrule": "Time will begin on a whistle and will be stopped when each member of the team crosses the start/finish line."
+              },
+              {
+                "id": 2,
+                "subrule": "If the ties connecting the players are broken at any time during the race, the team must stop and fix the ties before making any forward motion."
+              },
+              {
+                "id": 3,
+                "subrule": "IFC will supply the ties for the event."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Idi-Relay",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Each house will have four contestants that will race in one of three parts of the relay"
+              },
+              {
+                "id": 1,
+                "subrule": "Contestants one and four will be at the starting line. Contestants two and three will be at the 30ft line."
+              },
+              {
+                "id": 2,
+                "subrule": "The first leg of the relay will crabwalk 30ft on all fours with their chest facing up to the sky."
+              },
+              {
+                "id": 3,
+                "subrule": "Once the first contestant reaches the 30ft mark, contestant two and three may start their leg."
+              },
+              {
+                "id": 4,
+                "subrule": "Contestants two and three will wheelbarrow race the 30ft back to the starting point."
+              },
+              {
+                "id": 5,
+                "subrule": "After contestants two and three cross the starting line contestant four may begin the final leg of the race"
+              },
+              {
+                "id": 6,
+                "subrule": "The final contestant will be running a dizzy bat shuttle where they will lean over and spin around with their forehead placed on the end of the bat five times. After spinning, the contestant will run 30ft down and back."
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Tire Roll",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "The tire will start flat on the ground."
+              },
+              {
+                "id": 1,
+                "subrule": "On a whistle, the two person team must lift the tire to an upright position and begin rolling."
+              },
+              {
+                "id": 2,
+                "subrule": "Teams will roll it for a length of 50 feet and return back to the starting line."
+              },
+              {
+                "id": 3,
+                "subrule": "Time will start on the whistle and stop when the tire completely crosses the plane of the line."
+              },
+              {
+                "id": 4,
+                "subrule": "Teams are responsible for the safe stoppage of the tire after they cross the finish line.  If teams do not safely control the tire after the race they may receive a penalty or disqualification at the discretion of the Council representative judging the event."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Football Challenge",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Each house will have four (4) members participate: one (1) quarterback; one (1) receiver, and two (2) retrievers"
+              },
+              {
+                "id": 1,
+                "subrule": "The 2 retrievers will be allowed to retrieve footballs anywhere in the playing area.  If the retrievers interfere with the ball hitting the target, that throw will not count."
+              },
+              {
+                "id": 2,
+                "subrule": "There will be 3 marks set up at intervals of 20 yards, 25 yards, and 30 yards."
+              },
+              {
+                "id": 3,
+                "subrule": "The receiver will start at the 20 yard mark and make simple two handed catch, after completing the catch the receiver may move to the 25 yard mark."
+              },
+              {
+                "id": 4,
+                "subrule": "At the second (25 yard) mark the receiver must face away from his quarterback and make an over the shoulder catch, after completing the catch the receiver may move the the 30 yard mark."
+              },
+              {
+                "id": 5,
+                "subrule": "At the third (30 yard) mark the receiver may face the quarterback. The receiver must make the reception with one hand. The receiver may pull the ball into their body to gain control of the ball, but they may not use both hands."
+              },
+              {
+                "id": 6,
+                "subrule": "After completing the third (30 yard) reception the receiver must run back to the second (25 yard) mark and make another over the shoulder catch"
+              },
+              {
+                "id": 7,
+                "subrule": "After completion of the second (25 yard) mark for the second time the receiver must return to the first (20 yard) mark and make a two handed reception"
+              },
+              {
+                "id": 8,
+                "subrule": "Time will begin on the quarterback’s first throw and will be stopped when the last reception is complete."
+              },
+              {
+                "id": 9,
+                "subrule": "Each quarterback will stand behind a marked area when they throw the ball.  The quarterback must stay within the marked area throughout the entire game.  Each time the quarterback steps out of the market area, they will be penalized 3 seconds."
+              },
+              {
+                "id": 10,
+                "subrule": "Footballs will be provided by IFC."
+              },
+              {
+                "id": 11,
+                "subrule": "There will be a 4-minute time limit."
+              },
+              {
+                "id": 12,
+                "subrule": "Houses that fail complete all five (5) catches will be ranked at the last reception they made."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "name": "Limbo",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Only one person for each sorority and fraternity may participate with only their feet touching the ground."
+              },
+              {
+                "id": 1,
+                "subrule": "The participant must bend over backward without falling or touching the bar."
+              },
+              {
+                "id": 2,
+                "subrule": "The rungs will be lowered after each person in line has gone through that specific height."
+              },
+              {
+                "id": 3,
+                "subrule": "The official limbo bar will be provided by IFC"
+              },
+              {
+                "id": 4,
+                "subrule": "If multiple participants fail on the same rung, they will receive the same amount of points for the event."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Hercules/Atalanta",
+        "SubEvents": [
+          {
+            "id": 0,
+            "name": "100-Meter Sprint",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "The contestant must run through a 100-meter marked off line for time to stop."
+              },
+              {
+                "id": 1,
+                "subrule": "The event will take place at the Allgood-Bailey Stadium."
+              },
+              {
+                "id": 2,
+                "subrule": "The event will be timed individually for each contestant."
+              },
+              {
+                "id": 3,
+                "subrule": "NO SPIKES OF ANY KIND MAY BE USED"
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "name": "Long Jump",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Contestants are allowed to jump a maximum of three times for practice."
+              },
+              {
+                "id": 1,
+                "subrule": "The contestants will only have one attempt for the jump taken for scoring."
+              },
+              {
+                "id": 2,
+                "subrule": "No part of the athlete's foot should cross the front edge of the foul line. If, at the point of take-off, any part of his foot (even the toe edge of his shoe) crosses the front edge of the foul line, then the jump is termed to be illegal or a 'foul jump', and does not count."
+              },
+              {
+                "id": 3,
+                "subrule": "Typically, in International track and field events, a long jumper hasthree attempts to register his or her best legal jump. A foul jump accounts for an attempt, but the time isn't registered. Only the farthest legal jump counts."
+              },
+              {
+                "id": 4,
+                "subrule": "The distance, or the 'jump' is measured from the front edge of the foul line to the first landing point of the athlete. To better understand this, consider an athlete taking off legally from the foul line and landing on his feet 15 ft from the foul line. However, if, while landing, his hands touch the ground before his legs and a foot behind his farthest landing point, he would be awarded a jump of 14 ft, since the hands are nearer to the foul line than the feet and are the first point of contact."
+              },
+              {
+                "id": 5,
+                "subrule": "Similarly, even if the athlete takes off from behind the foul line, the starting point is still considered to be the front edge of the foul line, rather than the athlete's actual point of take off."
+              },
+              {
+                "id": 6,
+                "subrule": "Somersaults are not permitted during the jump."
+              },
+              {
+                "id": 7,
+                "subrule": "The maximum allowed thickness for a long jumper's shoe sole is 13 mm."
+              },
+              {
+                "id": 8,
+                "subrule": "Records made with the assistance of a tailwind of more than 2 m/sare not considered. However, the time is registered in the ongoing competition, since all the athletes benefit from the same wind conditions."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Loading Race",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Each participant will begin at a starting line, lift one of 5 given objects, travel to the loading table, lift the weight and place it on the table, return to the starting line, and repeat with all objects."
+              },
+              {
+                "id": 1,
+                "subrule": "Time will be started when the participant lifts the first weight and will be stopped when crossing the starting line after the final weight is loaded."
+              },
+              {
+                "id": 2,
+                "subrule": "Each object will be of varying size and weight."
+              },
+              {
+                "id": 3,
+                "subrule": "The Interfraternity Council will supply all equipment."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Rock Drag",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Each participant will begin at a starting line attached by a harness and rope to a rock. The Interfraternity Council will provide all the equipment."
+              },
+              {
+                "id": 1,
+                "subrule": "At the sound of “go” the participant will attempt to drag the rock through a line marked 50 feet away."
+              },
+              {
+                "id": 2,
+                "subrule": "Time will only stop once the rock is completely over the line"
+              },
+              {
+                "id": 3,
+                "subrule": "If the participant is unable to pull the rock through the 50 foot line, then the distance which the rock traveled  will be measured and used to ranked all participants who could not complete the pull."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Rope Climb",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "The contestants will climb a rope and touch the top. Time will stop once the top is struck and seen by the Interfraternity Council Representative."
+              },
+              {
+                "id": 1,
+                "subrule": "The Interfraternity Council will supply the equipment."
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Pushups",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Contestants will have one minute to complete as many pushups as possible."
+              },
+              {
+                "id": 1,
+                "subrule": "They must touch their chest to the provided block, keep a flat back, and fully extend their elbows for each pushup to count."
+              },
+              {
+                "id": 2,
+                "subrule": "Any pushups performed with bad form will not be counted. Failure to complete 3 correct pushups in a row will result in stopping the event. This is up to the discretion of the representative working the event."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Crucifix Hold",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Participants will hold two evenly loaded dumbbells (10 lbs.) out to their sides in an open stance for as long as possible.  The dumbbells should be held such that the participant’s knuckles are facing outwards and their thumbs are pointing up."
+              },
+              {
+                "id": 1,
+                "subrule": "Time will begin on a “go” and will be stopped when the participant fails to hold the weights up any longer"
+              },
+              {
+                "id": 2,
+                "subrule": "Once time starts, the arms must remain in a static position."
+              },
+              {
+                "id": 3,
+                "subrule": "If the participant’s arms move from an upright position, there we be a 3 second penalty.  This call is up to the discretion of the Council representative overseeing the event."
+              },
+              {
+                "id": 4,
+                "subrule": "Heels and feet must stay on the ground at all times.  Failure to do so will result in a 3 second penalty."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "name": "Farmers Carry",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Each participant will begin at a starting line with two 60 lbs Dumbbells in their hands"
+              },
+              {
+                "id": 1,
+                "subrule": "Participants will be walking back and forth along a line that will be 30 ft long"
+              },
+              {
+                "id": 2,
+                "subrule": "The event starts when the participant takes his first step past the line"
+              },
+              {
+                "id": 3,
+                "subrule": "The event is over when the participants drops the weight after starting"
+              },
+              {
+                "id": 4,
+                "subrule": "If the participant drops the weight between the two markers his distance will be rounded up to the next thirty feet"
+              },
+              {
+                "id": 5,
+                "subrule": "In the event of a tie, the participant with the fastest time wins"
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "name": "T-Test",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "The contestant will be given 3 practice attempts."
+              },
+              {
+                "id": 1,
+                "subrule": "The contestant will be given a maximum of 3 legitimate runs. However, the time taken will be the last run they do (not the best time of 3 runs) so the contestant is not required to try 3 times."
+              },
+              {
+                "id": 2,
+                "subrule": "The contestant will run the course twice"
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "name": "Dead Hang",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Each participant will begin with both hands on a pull-up bar."
+              },
+              {
+                "id": 1,
+                "subrule": "Their feet just can’t touch the ground (Any method of grip, direction, one arm etc Just don’t touch the ground!)"
+              },
+              {
+                "id": 2,
+                "subrule": "At the sound of “go” both feet of the contestant must leave the ground and then time will start."
+              },
+              {
+                "id": 3,
+                "subrule": "Time will stop when the contestant drops from the bar and their feet hits the ground"
+              },
+              {
+                "id": 4,
+                "subrule": "This event will take place at Kappa Sigma."
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "name": "Planking",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "The contestant will hold a elbow plank for as long as they can while an judge times them."
+              },
+              {
+                "id": 1,
+                "subrule": "The contestants must keep a flat back, their body should form a perfectly straight line from the crown of their head to their heels, and keep their arms at 90 degree angles to count."
+              },
+              {
+                "id": 2,
+                "subrule": "The contestants arms must be parallel to each other (cannot make a triangle with hands gripped together)."
+              },
+              {
+                "id": 3,
+                "subrule": "The contestants legs must be shoulder width apart (cannot push feet together)."
+              },
+              {
+                "id": 4,
+                "subrule": "Any plank performed with bad form will stop the timer. This is up to the discretion of the representative working the event."
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "name": "Kettle Bell Toss",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Each Participant will get Three Throws."
+              },
+              {
+                "id": 1,
+                "subrule": "If the participant crosses the base line that throw will be recorded with a distance of zero."
+              },
+              {
+                "id": 2,
+                "subrule": "The distance will be measured in feet and inches from the center of the line to the initial landing point of the kettlebell closest to the line by the judge."
+              },
+              {
+                "id": 3,
+                "subrule": "The kettlebell will be 30lbs (approximate weight of an empty keg)"
+              },
+              {
+                "id": 4,
+                "subrule": "The Interfraternity Council will supply the equipment."
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "name": "Tire Run",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined in this document."
+              },
+              {
+                "id": 1,
+                "subrule": "All obstacles must be cleared to the satisfaction of the judges, subject to a three second penalty per every tire missed (i.e. miss 2 tires = 6 sec penalty)."
+              },
+              {
+                "id": 2,
+                "subrule": "The contestant will run through the provided tires then, after completing one run will turn around (do a 180 degree turn) and run through the tires again and the timer will stop after they cross the starting line."
+              },
+              {
+                "id": 3,
+                "subrule": "One foot per tire, no tires can be skipped."
+              },
+              {
+                "id": 4,
+                "subrule": "If you trip the timer will not be stopped."
+              },
+              {
+                "id": 5,
+                "subrule": "The fastest time will determine the winner."
+              },
+              {
+                "id": 6,
+                "subrule": "In the case of a tie, the contestants who tied will run the course again."
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "name": "Pull-Ups",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "The starting and ending position will be straight-armed."
+              },
+              {
+                "id": 1,
+                "subrule": "For a pull up to be scored you must have your chin above the bar and its IFC or Panhel rep discretion to determine if the pull up will count."
+              },
+              {
+                "id": 2,
+                "subrule": "Swinging Pull Ups or “Kipping Pull Ups” will not be counted."
+              },
+              {
+                "id": 3,
+                "subrule": "The event will take place at Kappa Sigma."
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "name": "Bodyweight Bench",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "Weight from Tug of War weigh in will be used."
+              },
+              {
+                "id": 1,
+                "subrule": "Bar must touch your chest and come back up to a straight arm for that rep to be counted."
+              },
+              {
+                "id": 2,
+                "subrule": "Event will not be timed; however, you will not be able to be in the straight armed position for more than 5 seconds."
+              },
+              {
+                "id": 3,
+                "subrule": "Bar must weigh equal to or greater than your official weight. For example if you weigh 236lbs. The bar will be set to 240 lbs."
+              },
+              {
+                "id": 4,
+                "subrule": "The event will take place at Kappa Sigma."
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "name": "Keg Toss",
+            "Rules": [
+                {
+                  "id": 0,
+                  "subrule": "Each Participant will get Three Throws."
+                },
+                {
+                  "id": 1,
+                  "subrule": "If the participant crosses the base line that throw will be recorded with a distance of zero."
+                },
+                {
+                  "id": 2,
+                  "subrule": "The distance will be measured in feet and inches from the center of the line to the initial landing point of the keg closest to the line by the judge."
+                },
+                {
+                  "id": 3,
+                  "subrule": "The Interfraternity Council will supply the equipment."
+                }
+            ]
+          },
+          {
+            "id": 16,
+            "name": "Tire Flip",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "The contestant must flip a tire in a straight line 6 times, jump in the center hole, jump out, turn around and flip the tire back 6 times to the starting position, jump in the center hole, and then jump out. Time will stop when the contestant finishes the last jump."
+              },
+              {
+                "id": 1,
+                "subrule": "Contestants must attempt to flip the tire in a straight line. If contestants are cheating they will be disqualified from the tire flip event and receive 12 points towards their combined Hercules event score. This is up to the discretion of the Councils."
+              },
+              {
+                "id": 2,
+                "subrule": "The Interfraternity Council will supply the tire."
+              }
+            ]
+          },
+          {
+            "id": 17,
+            "name": "Obstacle Course",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined in this document."
+              },
+              {
+                "id": 1,
+                "subrule": "Two participants will compete from each organization, each house may report to the course at their discretion."
+              },
+              {
+                "id": 2,
+                "subrule": "All obstacles must be cleared to the satisfaction of the judges, subject to a three or a ten second penalty for each obstacle in question"
+              },
+              {
+                "id": 3,
+                "subrule": "One participant will start for his/her individual house.  Once that member finishes the race, the next participant for that house begins the course.  The time will be stopped when the second member crosses the finish line"
+              },
+              {
+                "id": 4,
+                "subrule": "The fastest time will determine the winner."
+              },
+              {
+                "id": 5,
+                "subrule": "In the case of a tie, one member from each team will do the obstacle course and the fastest time will win the event."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Closing Games",
+        "SubEvents": [
+          {
+            "id": 0,
+            "name": "Soccer",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "7 players to start the game, one being the goalie. Teams shall check-in to each game area within five minutes of being paged over the loudspeaker otherwise the game will be forfeit. Teams will be called when the time comes for them to report. A coin toss will determine which team starts with the ball.  At the beginning of the second half, the team that lost the coin toss will get first possession. Pairings for the first round will be selected by last year’s results. "
+              },
+              {
+                "id": 1,
+                "subrule": "The duration of the game shall be two equal periods of 6 minutes each. Except for the Championship Game, which shall be two equal periods of 8 minutes each. Halftime shall be 2 minutes. If a team is ahead by 10 at halftime the game shall be called. There will be a Running clock, meaning when the ball goes out of bounds the clock does not stop. If a team is found kicking the ball out intentionally at the discretion of the referees in order to maintain a lead, that team will automatically forfeit. If the ball goes over the barbed wire fence surrounding the south field then the clock WILL STOP. Overtime – Will start after a one-minute break. Each team will alternate 5 penalty kicks, if still tied, 1 to 1 penalty kick showdown. No Team is allowed to change goalies after the first shot is taken on their team."
+              },
+              {
+                "id": 2,
+                "subrule": "Cleats CANNOT be metal or have a toe cleat. Shin guards MUST be worn at all times, or the offending player will be issued a red card and team must play a man down. Casts and must be approved by the IFC Games Chairman to ensure that they are not safe to play with"
+              },
+              {
+                "id": 3,
+                "subrule": "Coin toss at the beginning of the game, choice of ends of the field and the kickoff shall be decided by a coin toss. Team winning the toss shall have the choice of ends of the field or the kickoff."
+              },
+              {
+                "id": 4,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined in this document. After a goal, the team that did not score will start with the ball at midfield. Slide tackling is allowed. The tackle CANNOT be from behind. This call is at the referee's discretion."
+              },
+              {
+                "id": 5,
+                "subrule": "No off sides will be called."
+              },
+              {
+                "id": 6,
+                "subrule": "ALL fouls will be left to the discretion of the judges. Foul language will not be tolerated. Fighting is an automatic disqualification. Possible Fouls: Charging Handling Ball Holding Kneeing Kicking, pushing, striking, or tripping Dangerous play Obstruction Attempted illegal substitution Unsportsmanlike conduct Interfering with goalkeeper Delay by goalkeeper in clearing the ball"
+              },
+              {
+                "id": 7,
+                "subrule": "A penalty kick shall be taken from the penalty mark. All players except kicker and opposing goal tender shall be within the playing field but outside the playing area, and at least 10 yards from the ball. The goalie shall remain on the goal line facing the kicker between the posts. He/she is permitted to move laterally (i.e. side to side) but shall not step or lunge forward until the ball is kicked. The player taking the kick must kick the ball forward. He shall not play the ball a second time until another player has touched it. The kicker must remain in a forward motion towards the ball. If kicker stops or restarts motion towards the ball without be approved from the official, the kick is no good. The original kicker may not play the ball rebounding from the goal post or crossbar until it has touched another player. "
+              },
+              {
+                "id": 8,
+                "subrule": "Substitutions will only be permitted during halftime. There will be no substitutions at any time during game play unless an injury occurs."
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "name": "Punt, Pass, Kick",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined in this document."
+              },
+              {
+                "id": 1,
+                "subrule": "Each house may report to the course at their discretion."
+              },
+              {
+                "id": 2,
+                "subrule": "Each competitor will have three attempts at each part of the event, with the farthest one being counted towards their combined score. Only one competitor may represent their house in all three parts of the event."
+              },
+              {
+                "id": 3,
+                "subrule": "Every ball must be released before the designated starting line and land in between the boundary lines; otherwise the distance for that attempt will be recorded as a zero (0). "
+              },
+              {
+                "id": 4,
+                "subrule": "The farthest combined distance will determine the winner."
+              },
+              {
+                "id": 5,
+                "subrule": "The final distance of each event will be recorded where the initial position of contact.  This distance will not include rolling distance."
+              },
+              {
+                "id": 6,
+                "subrule": "True distance will be measured from the center of the designated starting line to the initial point of contact."
+              },
+              {
+                "id": 7,
+                "subrule": "Equipment will be provided by IFC."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Ladder Ball",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined in this document."
+              },
+              {
+                "id": 1,
+                "subrule": "Two teams of two will compete against each other in race to the first team to score twenty one (21) points."
+              },
+              {
+                "id": 2,
+                "subrule": "Teammates will be standing at opposite ladders that will be 15 feet away."
+              },
+              {
+                "id": 3,
+                "subrule": "Throwing order will be decided by a coin-toss."
+              },
+              {
+                "id": 4,
+                "subrule": "Teams will alternate throwing bolas at the ladder across from them."
+              },
+              {
+                "id": 5,
+                "subrule": "Throwers must be standing behind the ladder at all times if they are in front of the ladder while throwing the throw will not count."
+              },
+              {
+                "id": 6,
+                "subrule": "Interference with the opposing teams thrower or throw will result in four (4) points awarded to the throwing team."
+              },
+              {
+                "id": 7,
+                "subrule": "Teams will score one (1) point if the bola stays on the bottom rung at the end of the round"
+              },
+              {
+                "id": 8,
+                "subrule": "Two (2) points will be awarded if the bola stays on the middle rung at the end of the round"
+              },
+              {
+                "id": 9,
+                "subrule": "Three (3) points will be awarded if the bola stays on the top rung at the end of the round"
+              },
+              {
+                "id": 10,
+                "subrule": "A single (1) bonus point will be awarded to the team if all three bolas are on the top of the ladder at the end of the round (This point is not awarded if there is any interference points)"
+              },
+              {
+                "id": 11,
+                "subrule": "If a bola is knocked off the ladder by the opposing team or same team throw that bola’s points are now zero (0)"
+              },
+              {
+                "id": 12,
+                "subrule": "The round ends once each team has thrown their three bolas"
+              },
+              {
+                "id": 13,
+                "subrule": "Scores are tallied at the end of each round"
+              },
+              {
+                "id": 14,
+                "subrule": "Teams must score exactly 21 points to win the game."
+              },
+              {
+                "id": 15,
+                "subrule": "If a team goes over 21 points the points of the busted throw will be subtracted from their score. (example: Team A has 20 points and scores 3 points after a throw. Team A’s score is reduced to 17 points.)"
+              },
+              {
+                "id": 16,
+                "subrule": "Interference after teams reach 17 points will result in immediate forfeiture of that game."
+              },
+              {
+                "id": 17,
+                "subrule": "If both teams reach 21 points off the same round they will proceed into overtime."
+              },
+              {
+                "id": 18,
+                "subrule": "Overtime will be one round where both teams will throw. The team with the highest score for that round wins. If both teams tie once again overtime will continue until there is a winner."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Obstacle Course",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined in this document."
+              },
+              {
+                "id": 1,
+                "subrule": "Two participants will compete from each organization, each house may report to the course at their discretion."
+              },
+              {
+                "id": 2,
+                "subrule": "All obstacles must be cleared to the satisfaction of the judges, subject to a three or a ten second penalty for each obstacle in question"
+              },
+              {
+                "id": 3,
+                "subrule": "One participant will start for his/her individual house.  Once that member finishes the race, the next participant for that house begins the course.  The time will be stopped when the second member crosses the finish line"
+              },
+              {
+                "id": 4,
+                "subrule": "The fastest time will determine the winner."
+              },
+              {
+                "id": 5,
+                "subrule": "In the case of a tie, one member from each team will do the obstacle course and the fastest time will win the event."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Tug of War",
+            "Rules": [
+              {
+                "id": 0,
+                "subrule": "All decisions made by the judges are FINAL.  If there is a dispute with a decision, follow the protest procedures outlined in this document."
+              },
+              {
+                "id": 1,
+                "subrule": "Any substitutions are at the discretion of the IFC games chair and must be presented by the house’s games chair during check-in for closing games.  Any possible substitutes must have their weight recorded with the team on the determined date of weigh-ins to be eligible."
+              },
+              {
+                "id": 2,
+                "subrule": "The team to pull the marked line of the opposing team across the centerline or the team closest to pulling the mark of the opposing team across the centerline after ten minutes will be declared the winner. "
+              },
+              {
+                "id": 3,
+                "subrule": "There will be a 1500-pound weight limit per team.  There is no limit to the amount of members on each team other than the maximum of 1500 pounds."
+              },
+              {
+                "id": 4,
+                "subrule": "The judge will verbally signal your team to begin digging in, and the first whistle will signal your team to begin tugging.  If either team begins digging in early that match will be stopped and reset."
+              },
+              {
+                "id": 5,
+                "subrule": "Any team letting go of the rope to allow his opponent to fall or stumble will be disqualified. "
+              },
+              {
+                "id": 6,
+                "subrule": "Gloves are not allowed nor is any other substance to increase grip. If participating members are seen applying anything that could be considered a grip enhancer they may be disqualified from the event at the discretion of the Rep and the Games Chairman.  In the event that a participant has a hand injury but still wants to participate, he or she must get the injury wrapped by the EMT on site, and be checked off by the Council representative judging the event."
+              },
+              {
+                "id": 7,
+                "subrule": "The last person may not wrap the rope around his or her body."
+              },
+              {
+                "id": 8,
+                "subrule": "Weigh-ins will be done on Tuesday, September 5th at 9pm at Sigma Nu.  All prospective members of the tug team must appear together with their student IDs.  Any member without a valid ID will not be allowed to weigh-in and, thus will not be allowed to participate.  Failure to weigh in will result in a disqualification."
+              },
+              {
+                "id": 9,
+                "subrule": "If you are not on the list of the people who weighed in, then you may not compete."
+              },
+              {
+                "id": 10,
+                "subrule": "A list of a final competing team roster must be submitted to Lucas Bayne, IFC Games Chairman, before the start of closing games."
+              }
+            ]
+          }
+        ]
+      }
+    ]

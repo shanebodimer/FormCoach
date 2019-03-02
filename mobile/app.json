@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Greek Week App",
+    "description": "Everything you need to be prepared for Greek Week 2018",
+    "slug": "gwapp",
+    "primaryColor": "#474040",
+    "privacy": "public",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app_icon.png",
+    "sdkVersion": "27.0.0",
+    "android": {
+      "icon": "./app_icon.png",
+      "package": "sam.osborne.gwapp",
+  },
+
+  "android": {
+    "package": "com.samosborne.gwapp",
+    "permissions": [],
+    "versionCode": 1
+  }
+}
+}

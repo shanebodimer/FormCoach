@@ -1,0 +1,156 @@
+__d(function (global, _require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _react2 = _require(_dependencyMap[0], "react");
+
+  var _react3 = _interopRequireDefault(_react2);
+
+  var _index = _require(_dependencyMap[1], "./node_modules/react-transform-hmr/lib/index.js");
+
+  var _index2 = _interopRequireDefault(_index);
+
+  var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+  var _jsxFileName = "/Users/shanebodimer/Desktop/GreekWeekApp/App.js";
+
+  var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+  var _reactNative = _require(_dependencyMap[2], "react-native");
+
+  var _reactNativeTabView = _require(_dependencyMap[3], "react-native-tab-view");
+
+  var _expo = _require(_dependencyMap[4], "expo");
+
+  var _panel_styles = _require(_dependencyMap[5], "./panels/panel_styles");
+
+  var _panel_styles2 = _interopRequireDefault(_panel_styles);
+
+  var _calendar_panel = _require(_dependencyMap[6], "./panels/calendar_panel");
+
+  var _calendar_panel2 = _interopRequireDefault(_calendar_panel);
+
+  var _rules_panel = _require(_dependencyMap[7], "./panels/rules_panel");
+
+  var _rules_panel2 = _interopRequireDefault(_rules_panel);
+
+  var _score_panel = _require(_dependencyMap[8], "./panels/score_panel");
+
+  var _score_panel2 = _interopRequireDefault(_score_panel);
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _components = {
+    App: {
+      displayName: "App"
+    }
+  };
+
+  var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+    filename: "/Users/shanebodimer/Desktop/GreekWeekApp/App.js",
+    components: _components,
+    locals: [module],
+    imports: [_react3.default]
+  });
+
+  function _wrapComponent(id) {
+    return function (Component) {
+      return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+    };
+  }
+
+  var App = _wrapComponent("App")(function (_React$Component) {
+    _inherits(App, _React$Component);
+
+    function App() {
+      var _ref;
+
+      var _temp, _this, _ret;
+
+      _classCallCheck(this, App);
+
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+        index: 0,
+        routes: [{
+          key: 'score',
+          title: 'Scoreboard'
+        }, {
+          key: 'calendar',
+          title: 'Calendar'
+        }, {
+          key: 'rules',
+          title: 'Rule Book'
+        }]
+      }, _this._renderTabBar = function (props) {
+        return _react3.default.createElement(_reactNativeTabView.TabBar, _extends({}, props, {
+          renderLabel: function renderLabel(route) {
+            return _react3.default.createElement(
+              _reactNative.Text,
+              {
+                style: {
+                  color: '#fff',
+                  margin: 15
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 24
+                }
+              },
+              route.route.title
+            );
+          },
+          style: _panel_styles2.default.header,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21
+          }
+        }));
+      }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(App, [{
+      key: "render",
+      value: function render() {
+        var _this2 = this;
+
+        return _react3.default.createElement(_reactNativeTabView.TabView, {
+          navigationState: this.state,
+          renderTabBar: this._renderTabBar,
+          renderScene: (0, _reactNativeTabView.SceneMap)({
+            score: _score_panel2.default,
+            calendar: _calendar_panel2.default,
+            rules: _rules_panel2.default
+          }),
+          onIndexChange: function onIndexChange(index) {
+            return _this2.setState({
+              index: index
+            });
+          },
+          initialLayout: {
+            width: _reactNative.Dimensions.get('window').width,
+            height: _reactNative.Dimensions.get('window').height
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34
+          }
+        });
+      }
+    }]);
+
+    return App;
+  }(_react3.default.Component));
+
+  exports.default = App;
+});

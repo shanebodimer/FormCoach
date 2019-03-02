@@ -1,0 +1,29 @@
+__d(function (global, _require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _react = _require(_dependencyMap[0], "react");
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _reactNative = _require(_dependencyMap[1], "react-native");
+
+  var _expo = _require(_dependencyMap[2], "expo");
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  exports.default = _reactNative.StyleSheet.create({
+    container: {
+      flexDirection: 'row',
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+    header: {
+      backgroundColor: '#474040',
+      paddingTop: _expo.Constants.statusBarHeight
+    }
+  });
+});

@@ -1,0 +1,13 @@
+__d(function (global, _require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _CameraBasedBarCodeScanner = _require(_dependencyMap[0], "./CameraBasedBarCodeScanner");
+
+  var _CameraBasedBarCodeScanner2 = _interopRequireDefault(_CameraBasedBarCodeScanner);
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  exports.default = _CameraBasedBarCodeScanner2.default;
+});
