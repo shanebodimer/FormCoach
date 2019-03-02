@@ -8,7 +8,6 @@ var CaptureList = inject("CaptureStore")(
   observer(
     class CaptureList extends Component {
       render() {
-        console.log(this.props.CaptureStore.captures);
         return (
           <div className="captureList">
             {this.props.CaptureStore.asList.map((value, i) => {

@@ -10,7 +10,6 @@ class CaptureStore {
 
   loadCaptures = () => {
     return axios.get("https://formcoach.appspot.com/api").then(response => {
-      console.log(response.data);
       Object.keys(response.data).forEach(key => {
         if (key !== "length") {
           this.captures.set(response.data[key].id, response.data[key]);

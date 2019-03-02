@@ -86,9 +86,11 @@ router.post("/capture", function(req, res, next) {
 
 /* POST to create a new action */
 router.post("/capture/:cid", function(req, res, next) {
-  firestore
-    .collection("captures")
-    .doc(req.params.cid)
+  var capture_query = firestore.collection("captures").doc(req.params.cid);
+
+  var count = 0;
+
+  capture_query
     .collection("action")
     .add({
       action_data: {
@@ -96,6 +98,15 @@ router.post("/capture/:cid", function(req, res, next) {
         y: req.body.y,
         z: req.body.z
       }
+    })
+    .then(docRef => {
+      return capture_query
+        .get()
+        .then(capture => (count = capture.data().count))
+        .then(() => docRef);
+    })
+    .then(docRef => {
+      return capture_query.update({ count: count + 1 }).then(() => docRef);
     })
     .then(docRef => {
       res.json({ id: docRef.id });
