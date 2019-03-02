@@ -1,0 +1,14 @@
+.captureListItem {
+  box-shadow: 0 0 20px rgba(188, 204, 220, 1);
+  border-radius: 4px;
+  flex: 1;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: white;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.captureListItem:hover {
+  box-shadow: 0 0 20px 5px rgba(188, 204, 220, 1);
+}

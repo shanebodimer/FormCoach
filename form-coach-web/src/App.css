@@ -1,0 +1,46 @@
+.App {
+  padding: 20px;
+  height: calc(100% - 40px);
+}
+
+.App .content {
+  display: flex;
+  height: calc(100% - 70px - 20px);
+}
+
+.App .logo {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.App .logo-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.App .logo-section-spacer {
+  flex: 3;
+}
+
+.App .logo-section .logo-image {
+  max-width: 17%;
+  margin-right: 10px;
+}
+
+.App .logo-section .logo-name {
+  font-size: 3vw;
+  font-weight: 700;
+  cursor: default;
+  user-select: none;
+}
+
+.App .capture-list {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.App .capture-display {
+  flex: 3;
+  margin-left: 10px;
+}
