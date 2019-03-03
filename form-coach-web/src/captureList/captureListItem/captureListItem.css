@@ -1,4 +1,4 @@
-.captureListItem {
+.capture-list-item {
   box-shadow: 0 0 20px rgba(188, 204, 220, 1);
   border-radius: 4px;
   flex: 1;
@@ -7,8 +7,32 @@
   background-color: white;
   cursor: pointer;
   transition: box-shadow 0.2s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
-.captureListItem:hover {
+.capture-list-item-sport-info {
+  display: flex;
+  align-items: center;
+}
+
+.capture-list-item-sport-info .capture-datetime {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #4a4a4a;
+  padding-top: 3px;
+}
+
+.capture-list-item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.capture-list-item:hover {
   box-shadow: 0 0 20px 5px rgba(188, 204, 220, 1);
 }

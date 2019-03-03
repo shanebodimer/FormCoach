@@ -93,11 +93,7 @@ router.post("/capture/:cid", function(req, res, next) {
   capture_query
     .collection("action")
     .add({
-      action_data: {
-        x: req.body.x,
-        y: req.body.y,
-        z: req.body.z
-      }
+      action_data: JSON.parse(req.body.data)
     })
     .then(docRef => {
       return capture_query

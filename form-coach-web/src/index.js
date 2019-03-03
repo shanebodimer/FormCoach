@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "mobx-react";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import CaptureStore from "./stores/captureStore";
 
@@ -11,9 +12,11 @@ var stores = { CaptureStore: new CaptureStore() };
 
 stores.CaptureStore.loadCaptures().then(() => {
   ReactDOM.render(
-    <Provider {...stores}>
-      <App />
-    </Provider>,
+    <Router>
+      <Provider {...stores}>
+        <App />
+      </Provider>
+    </Router>,
     document.getElementById("root")
   );
 });

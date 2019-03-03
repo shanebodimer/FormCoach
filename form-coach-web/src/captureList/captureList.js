@@ -9,7 +9,7 @@ var CaptureList = inject("CaptureStore")(
     class CaptureList extends Component {
       render() {
         return (
-          <div className="captureList">
+          <div className="capture-list">
             {this.props.CaptureStore.asList.map((value, i) => {
               return <CaptureListItem key={i} capture={value} />;
             })}

@@ -1,7 +1,15 @@
-.display {
+.dashboard {
   box-shadow: 0 0 20px rgba(188, 204, 220, 1);
   border-radius: 4px;
   padding: 20px;
   background-color: white;
-  height: calc(100% - 110px);
+  height: calc(100% - 60px);
+}
+
+.dashboard .row {
+  display: flex;
+}
+
+.dashboard .column {
+  flex: 1;
 }

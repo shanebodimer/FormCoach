@@ -1,0 +1,22 @@
+.nav-link-text {
+  box-shadow: 0 0 20px rgba(188, 204, 220, 1);
+  border-radius: 4px;
+  flex: 1;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: white;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link-text:hover {
+  box-shadow: 0 0 20px 5px rgba(188, 204, 220, 1);
+}

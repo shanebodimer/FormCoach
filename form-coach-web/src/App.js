@@ -1,9 +1,12 @@
 import React, { Component } from "react";
-import { inject, observer } from "mobx-react";
+import { Route } from "react-router-dom";
 import "./App.css";
 
+import NavLinkItem from "./navLink/navLink";
+
+import Dashboard from "./dashboard/dashboard";
 import CaptureList from "./captureList/captureList";
-import Display from "./display/display";
+import DisplayCapture from "./displayCapture/displayCapture";
 
 import FormCoachLogo from "./logo.png";
 
@@ -19,19 +22,24 @@ class App extends Component {
               className="logo-image"
               alt="Logo"
             />
-            <span className="logo-name">BlueTrace</span>
+            <span className="logo-name">Bluetrace</span>
           </div>
           <div className="logo-section-spacer" />
         </div>
         <div className="content">
-          <div className="capture-list">
-            <h2>Captures</h2>
+          <div className="nav-list">
+            <NavLinkItem link="/" linkName="Dashboard" />
+            <h2>Recent Captures</h2>
             <CaptureList />
           </div>
           <div className="capture-display">
-            <h2>Dashboard</h2>
-            <Display />
+            <Route path="/" exact component={Dashboard} />
+            <Route path="/capture/:cid" component={DisplayCapture} />
           </div>
+        </div>
+        <div className="footer">
+          <hr />
+          &copy; 2019 Bluetrace
         </div>
       </div>
     );

@@ -1,4 +1,8 @@
-.captureList {
+.capture-list {
   display: flex;
   flex-direction: column;
+  height: calc(100% - 150px);
+  overflow-y: scroll;
+  padding: 20px;
+  margin: -20px;
 }

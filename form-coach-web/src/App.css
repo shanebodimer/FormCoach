@@ -5,12 +5,12 @@
 
 .App .content {
   display: flex;
-  height: calc(100% - 70px - 20px);
+  height: calc(100% - 70px - 80px);
 }
 
 .App .logo {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .App .logo-section {
@@ -35,7 +35,7 @@
   user-select: none;
 }
 
-.App .capture-list {
+.App .nav-list {
   flex: 1;
   margin-right: 10px;
 }
@@ -43,4 +43,11 @@
 .App .capture-display {
   flex: 3;
   margin-left: 10px;
+}
+
+.App .footer hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
