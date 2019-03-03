@@ -17,12 +17,96 @@ import Math from 'Math'
 //  - To do this we need a set of variances
 //  - We need multiple good form datasets
 
-export const varianceCalc = (userData, idealData) => {
+const ACCELERATION = "a"
+const GYROSCOPE = "g"
+
+export const varianceCalc = (userData, idealData, range) => {
   var userLength = userData.length;
-  var absDiffs = new Array();
-  for (var i =0; i < userLength; i++) {
-    absDiffs[absDiffs.length] = abs(userData[i].a.mag - idealData[i].a.mag)
+  
+  // Find the max entries for each data set
+  var maxUserAcc = findMax(userData, ACCELERATION)
+  var maxIdealAcc = findMax(idealData, ACCELERATION)
+  var maxUserGyro = findMax(userData, GYROSCOPE)
+  var maxIdealGyro = findMax(idealData, GYROSCOPE)
+
+  var maxUserAccID = maxUserAcc[0]
+  var maxIdealAccID = maxIdealAcc[0]
+  var maxUserGyroID = maxUserGyro[0]
+  var maxIdealGyroID = maxIdealGyro[0]
+
+  // Calculate abs diffs
+  var accAbsDiffs = getAbsDiffs(userData, idealData, maxUserAccID, maxIdealAccID, range, ACCELERATION)
+  var gyroAbsDiffs = getAbsDiffs(userData, idealData, maxUserGyroID, maxIdealGyroID, range, GYROSCOPE)
+
+  var accVariance = Math.var(accAbsDiffs)
+  var gyroVariance = Math.var(gyroAbsDiffs)
+
+  return [accVariance, gyroVariance]
+}
+
+// Returns the [maxIndex, maxValue] of an array of objects
+function findMax(arr, measure) {
+  if (arr.length === 0) {
+      return -1;
   }
-  variance = Math.var(absDiffs)
-  return variance
+
+  if (measure === ACCELERATION) {
+    let max = arr[0].a.mag;
+    let maxIndex = 0;
+
+    for (var i = 1; i < arr.length; i++) {
+      if (arr[i].a.mag > max) {
+          maxIndex = i;
+          max = arr[i];
+      }
+    }
+    return [maxIndex, max];
+  }
+  
+  else {
+    let max = arr[0].g.mag;
+    let maxIndex = 0;
+
+    for (var i = 1; i < arr.length; i++) {
+      if (arr[i].g.mag > max) {
+          maxIndex = i;
+          max = arr[i];
+      }
+    }
+    return [maxIndex, max];
+  }
+}
+
+// 
+function getAbsDiffs(userData, idealData, userMaxID, idealMaxID, range, measure) {
+  var absDiffsTop = Array()
+  var absDiffsBot = Array()
+
+  var interval = Math.ceil(range/2)
+
+  // ACCELEROMETER DATA
+  if (measure == ACCELERATION) {
+    let i,j
+    // Loop to go from max up up to range/2
+    for (i = userMaxID, j = idealMaxID; i < userMaxID+interval; i++, j++) {
+      absDiffsTop[absDiffsTop.length] = abs(userData[i].a.mag - idealData[j].a.mag)
+    }
+    // Loop to go from max down to range/2
+    for (i = userMaxID-1, j = idealMaxID-1; i > userMaxID-interval; i--, j--) {
+      absDiffsBot[absDiffsBot.length] = abs(userData[i].a.mag - idealData[j].a.mag)
+    }
+  }
+  // GYRO DATA
+  else {
+    let i,j
+    // Loop to go from max up up to range/2
+    for (i = userMaxID, j = idealMaxID; i < userMaxID+interval; i++, j++) {
+      absDiffsTop[absDiffsTop.length] = abs(userData[i].g.mag - idealData[j].g.mag)
+    }
+    // Loop to go from max down to range/2
+    for (i = userMaxID-1, j = idealMaxID-1; i > userMaxID-interval; i--, j--) {
+      absDiffsBot[absDiffsBot.length] = abs(userData[i].g.mag - idealData[j].g.mag)
+    }
+  }
+  return [...absDiffsBot, ...absDiffsTop]
 }
