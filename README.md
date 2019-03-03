@@ -40,3 +40,5 @@ Bluetrace uses motion data from a device attached to the athletes hand. It then 
 ## What's next for Bluetrace
 
 In the future, we hope to explore a more compact motion sensor. We think this can be accomplished by using pre-existing motion devices like the Apple Watch or Fitbit. Integrating our project with their APIs would allow this to work.
+
+yeah aiiight
