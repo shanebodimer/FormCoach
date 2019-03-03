@@ -51,11 +51,31 @@ const varianceCalc = (userData, idealData, range) => {
     range,
     GYROSCOPE
   );
+  
+  var accSum, accVariance, accAvgAbsDiff
+  var gyroSum, gyroVariance, gyroAvgAbsDiff
 
-  var accVariance = variance(accAbsDiffs);
-  var gyroVariance = variance(gyroAbsDiffs);
+  if (accAbsDiffs === undefined || accAbsDiffs.length === 0) {
+    accSum = -1;
+    accVariance = -1;
+    accAvgAbsDiff = -1;
+  } else {
+    accSum = accAbsDiffs.reduce((partial_sum, a) => partial_sum + a); 
+    accVariance = variance(accAbsDiffs);
+    accAvgAbsDiff = accSum / accAbsDiffs.length;
+  }
 
-  return [accVariance, gyroVariance];
+  if (gyroAbsDiffs === undefined || gyroAbsDiffs.length === 0) {
+    gyroSum = -1; 
+    gyroVariance = -1;
+    gyroAvgAbsDiff = -1;
+  } else {
+    gyroSum = gyroAbsDiffs.reduce((partial_sum, a) => partial_sum + a); 
+    gyroVariance = variance(gyroAbsDiffs);
+    gyroAvgAbsDiff = gyroSum / gyroAbsDiffs.length;
+  }
+
+  return [accVariance, accAvgAbsDiff, gyroVariance, gyroAvgAbsDiff];
 };
 
 // Returns the [maxIndex, maxValue] of an array of objects
