@@ -17,12 +17,18 @@ class CaptureStore {
     });
   }
 
+  updateCapture = capture => {
+    capture["loaded"] = false;
+    this.captures.set(capture.id, capture);
+  };
+
   loadCapture = captureID => {
     var capture = this.captures.get(captureID);
     return axios
-      .get(`https://formcoach.appspot.com/api/capture/${captureID}`)
+      .get(`https://bluetrace.tech/api/capture/${captureID}`)
       .then(response => {
         capture["actions"] = response.data.actions;
+        delete capture.actions.length;
       })
       .then(() => {
         capture["loaded"] = true;
@@ -30,7 +36,7 @@ class CaptureStore {
   };
 
   loadCaptures = () => {
-    return axios.get("https://formcoach.appspot.com/api").then(response => {
+    return axios.get("https://bluetrace.tech/api").then(response => {
       Object.keys(response.data).forEach(key => {
         if (key !== "length") {
           response.data[key]["loaded"] = false;

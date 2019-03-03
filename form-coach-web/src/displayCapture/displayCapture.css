@@ -4,6 +4,7 @@
   padding: 20px;
   background-color: white;
   height: calc(100% - 60px);
+  overflow: scroll;
 }
 
 .display-capture.loading {

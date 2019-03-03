@@ -17,7 +17,7 @@ class CaptureListItem extends Component {
       case "baseball":
         return <IosBaseball color="#347eff" />;
 
-      case "disc":
+      case "disc golf":
         return <IosDisc color="#347eff" />;
 
       case "basketball":

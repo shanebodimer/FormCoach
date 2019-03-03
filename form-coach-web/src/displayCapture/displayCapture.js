@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { computed, decorate } from "mobx";
 import { inject, observer } from "mobx-react";
 import "./displayCapture.css";
+import varianceCalc from "../wavecomparison";
+
+import { LineChart, Line, XAxis, YAxis } from "recharts";
 
 import IosBaseball from "react-ionicons/lib/IosBaseball";
 import IosDisc from "react-ionicons/lib/IosDisc";
@@ -13,11 +16,17 @@ import IosWater from "react-ionicons/lib/IosWater";
 var DisplayCapture = inject("CaptureStore")(
   observer(
     class DisplayCapture extends Component {
-      /* constructor(props) {
+      constructor(props) {
         super(props);
 
+        this.props.CaptureStore.loadCapture("1oabhNVI50BiTrGrom6g");
+
+        this.comp_capture = this.props.CaptureStore.captures.get(
+          "1oabhNVI50BiTrGrom6g"
+        );
+
         // this.props.CaptureStore.loadCapture(this.props.match.params.cid).then
-      } */
+      }
 
       capture = () =>
         this.props.CaptureStore.captures.get(this.props.match.params.cid);
@@ -35,7 +44,7 @@ var DisplayCapture = inject("CaptureStore")(
               <IosBaseball className="loading-icon" color="#347eff" rotate />
             );
 
-          case "disc":
+          case "disc golf":
             return <IosDisc className="loading-icon" color="#347eff" rotate />;
 
           case "basketball":
@@ -62,10 +71,43 @@ var DisplayCapture = inject("CaptureStore")(
       render() {
         this.loadCapture();
 
-        return this.capture().loaded ? (
+        return this.capture().loaded && this.comp_capture.loaded ? (
           <div className="display-capture">
-            {this.capture().actions.size > 0
-              ? this.capture().actions.map((value, i) => <span>{value}</span>)
+            {Object.keys(this.capture().actions).length > 0
+              ? [...Object.values(this.capture().actions)].map((value, i) => (
+                  <div key={i}>
+                    <span>
+                      {varianceCalc(
+                        value.action_data,
+                        [...Object.values(this.comp_capture.actions)][0]
+                          .action_data,
+                        25
+                      ).join(", ")}
+                    </span>
+                    <LineChart
+                      width={500}
+                      height={300}
+                      data={value.action_data}
+                    >
+                      <XAxis tick={false} />
+                      <YAxis tick={false} />
+                      <Line
+                        type="monotone"
+                        dataKey="aMag"
+                        stroke="#002c6e"
+                        strokeWidth={3}
+                        dot={false}
+                      />
+                      <Line
+                        type="monotone"
+                        dataKey="gMag"
+                        stroke="green"
+                        strokeWidth={3}
+                        dot={false}
+                      />
+                    </LineChart>
+                  </div>
+                ))
               : "No Actions Recorded"}
           </div>
         ) : (

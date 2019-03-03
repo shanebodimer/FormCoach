@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
-var Firestore = require("@google-cloud/firestore");
 var moment = require("moment");
+var Firestore = require("@google-cloud/firestore");
 
 const firestore = new Firestore({
   projectId: "formcoach",
