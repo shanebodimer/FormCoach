@@ -27,9 +27,7 @@ export default class ActionGraph extends React.Component {
             strokeWidth: 2,
             stroke: "#647ACB"
           }}
-        >
-          {/* <Grid /> */}
-        </LineChart>
+        />
         <LineChart
           style={StyleSheet.absoluteFill}
           data={this.state.y}

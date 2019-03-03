@@ -23,7 +23,15 @@ export default class History extends React.Component {
       var result = Object.keys(response.data).map(function(key) {
         return [Number(key), response.data[key]];
       });
+      console.log(result);
       result.pop();
+      result.sort((a, b) =>
+        a[1]["date"]["_seconds"] < b[1]["date"]["_seconds"]
+          ? 1
+          : b[1]["date"]["_seconds"] < a[1]["date"]["_seconds"]
+          ? -1
+          : 0
+      );
       // Update state
       this.setState({
         raw: JSON.stringify(result),
@@ -53,6 +61,7 @@ export default class History extends React.Component {
         {this.state.history.map((event, i) => {
           return (
             <TouchableOpacity
+              style={{ display: event[1].count != 0 ? "block" : "none" }}
               key={i}
               onPress={() => navigate("Single", { id: event[1].id })}
             >

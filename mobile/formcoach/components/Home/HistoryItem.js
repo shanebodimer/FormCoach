@@ -17,14 +17,27 @@ export default class HistoryItem extends React.Component {
   render() {
     let ico = "";
     switch (this.props.sport) {
-      case "basketball":
-        ico = "ios-basketball";
-        break;
-      case "baseball":
+      case "Baseball swing":
         ico = "ios-baseball";
         break;
       case "disc":
+      case "Disc golf":
         ico = "md-disc";
+        break;
+      case "Golf swing":
+        ico = "ios-flag";
+        break;
+      case "Freestyle swim":
+        ico = "ios-water";
+        break;
+      case "soccer":
+        ico = "md-soccer";
+        break;
+      case "basketball":
+        ico = "ios-basketball";
+        break;
+      default:
+        ico = "ios-add";
         break;
     }
 
@@ -40,7 +53,7 @@ export default class HistoryItem extends React.Component {
             </View>
             <View>
               <Text style={styles.date}>
-                <Text style={styles.bold}>{sport}</Text> on{" "}
+                <Text style={styles.bold}>{sport}</Text>{" "}
                 {moment
                   .unix(this.props.date)
                   .format("MMMM Do hh:mma")
