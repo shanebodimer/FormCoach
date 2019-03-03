@@ -9,10 +9,25 @@ export default class CorrectGraph extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      x: [1, 2, 4],
-      y: [2, 4, 5],
-      z: [3, 6, 9]
+      gMag: [],
+      aMag: []
     };
+
+    let gMag = [];
+    let aMag = [];
+    // let z = [];
+
+    if (this.props.data !== []) {
+      for (var i = 0; i < this.props.data.length; i++) {
+        gMag.push(this.props.data[i]["gMag"]);
+        aMag.push(this.props.data[i]["aMag"]);
+      }
+
+      this.state = {
+        gMag: aMag,
+        aMag: gMag
+      };
+    }
   }
   render() {
     return (
@@ -24,33 +39,22 @@ export default class CorrectGraph extends React.Component {
         <View style={{ height: 100 }}>
           <LineChart
             style={{ flex: 1 }}
-            data={this.state.x}
+            data={this.state.gMag}
             contentInset={{ top: 10, bottom: 10 }}
+            curve={shape.curveNatural}
             svg={{
               strokeWidth: 2,
               stroke: "#647ACB"
             }}
-          >
-            {/* <Grid /> */}
-          </LineChart>
-          <LineChart
-            style={StyleSheet.absoluteFill}
-            data={this.state.y}
-            contentInset={{ top: 10, bottom: 10 }}
-            curve={shape.curveNatural}
-            svg={{
-              strokeWidth: 2,
-              stroke: "#D64545"
-            }}
           />
           <LineChart
             style={StyleSheet.absoluteFill}
-            data={this.state.z}
+            data={this.state.aMag}
             contentInset={{ top: 10, bottom: 10 }}
             curve={shape.curveNatural}
             svg={{
               strokeWidth: 2,
-              stroke: "#E9B949"
+              stroke: "green"
             }}
           />
         </View>

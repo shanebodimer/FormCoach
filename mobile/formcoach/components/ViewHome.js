@@ -35,20 +35,28 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedSport: "Select your sport...",
+      selectedSport: "Select your activity...",
       captureDisabled: true,
       history: []
     };
 
     // Get history
-    axios.get("https://formcoach.appspot.com/api").then(response => {
+    axios.get("https://bluetrace.tech/api").then(response => {
       var result = Object.keys(response.data).map(function(key) {
         return [Number(key), response.data[key]];
       });
       // Update state w/ last three
+      result.pop();
+      result.sort((a, b) =>
+        a[1]["date"]["_seconds"] < b[1]["date"]["_seconds"]
+          ? 1
+          : b[1]["date"]["_seconds"] < a[1]["date"]["_seconds"]
+          ? -1
+          : 0
+      );
       this.setState({
         raw: JSON.stringify(result),
-        history: result.slice(0, 3)
+        history: result.filter(entry => entry[1].count > 0).slice(0, 3)
       });
     });
 
@@ -76,7 +84,7 @@ export default class Home extends React.Component {
 
   startCapture() {
     const { navigate } = this.props.navigation;
-    if (this.state.selectedSport != "Select your sport...") {
+    if (this.state.selectedSport != "Select your activity...") {
       navigate("Capture", { sport: this.state.selectedSport });
     }
   }
@@ -101,7 +109,7 @@ export default class Home extends React.Component {
         <TouchableOpacity
           style={styles.captureTouch}
           onPress={
-            this.state.selectedSport != "Select your sport..."
+            this.state.selectedSport != "Select your activity..."
               ? this.startCapture
               : this.selectActivity
           }

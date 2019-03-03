@@ -1763,6 +1763,47 @@ compression@^1.7.1:
     safe-buffer "5.1.2"
     vary "~1.1.2"
 
+compute-array-constructors@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/compute-array-constructors/-/compute-array-constructors-1.0.1.tgz#87ed7a659668f32bf470ce21c9bb224964892665"
+  integrity sha1-h+16ZZZo8yv0cM4hybsiSWSJJmU=
+
+compute-array-dtype@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/compute-array-dtype/-/compute-array-dtype-1.0.1.tgz#d04926b68490224590539a4ae812f18a4998dbf3"
+  integrity sha1-0EkmtoSQIkWQU5pK6BLxikmY2/M=
+
+compute-dtype@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/compute-dtype/-/compute-dtype-1.0.0.tgz#f7465fc268166e2b5a2b8a64b57cec69118d3574"
+  integrity sha1-90ZfwmgWbitaK4pktXzsaRGNNXQ=
+  dependencies:
+    compute-array-dtype "^1.0.0"
+    type-name "^1.0.1"
+
+compute-indexspace@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/compute-indexspace/-/compute-indexspace-1.0.1.tgz#d81d0a582145c96e4bb39936aebdae6cc57e857f"
+  integrity sha1-2B0KWCFFyW5Ls5k2rr2ubMV+hX8=
+  dependencies:
+    validate.io-nonnegative-integer "^1.0.0"
+    validate.io-string-primitive "^1.0.0"
+
+compute-variance@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/compute-variance/-/compute-variance-3.0.0.tgz#baeb540d8fc7a48e2b0763bb99e4c14371862642"
+  integrity sha1-uutUDY/HpI4rB2O7meTBQ3GGJkI=
+  dependencies:
+    compute-array-constructors "^1.0.0"
+    dstructs-matrix "^2.0.0"
+    validate.io-array-like "^1.0.0"
+    validate.io-boolean-primitive "^1.0.0"
+    validate.io-function "^1.0.2"
+    validate.io-matrix-like "^1.0.2"
+    validate.io-object "^1.0.4"
+    validate.io-positive-integer "^1.0.0"
+    validate.io-string-primitive "^1.0.0"
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
@@ -1792,6 +1833,16 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
+
+const-max-uint32@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/const-max-uint32/-/const-max-uint32-1.0.2.tgz#f009bb6230e678ed874dd2d6a9cd9e3cbfabb676"
+  integrity sha1-8Am7YjDmeO2HTdLWqc2ePL+rtnY=
+
+const-pinf-float64@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/const-pinf-float64/-/const-pinf-float64-1.0.0.tgz#f6efb0d79f9c0986d3e79f2923abf9b70b63d726"
+  integrity sha1-9u+w15+cCYbT558pI6v5twtj1yY=
 
 convert-source-map@^1.1.0, convert-source-map@^1.5.1:
   version "1.6.0"
@@ -2053,6 +2104,45 @@ dom-walk@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.1.tgz#672226dc74c8f799ad35307df936aba11acd6018"
   integrity sha1-ZyIm3HTI95mtNTB9+TaroRrNYBg=
+
+dstructs-array-constructors@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/dstructs-array-constructors/-/dstructs-array-constructors-1.0.2.tgz#0f068ad5b37d014a44021a4f9c9dd0d89a52645a"
+  integrity sha1-DwaK1bN9AUpEAhpPnJ3Q2JpSZFo=
+
+dstructs-array-dtype@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/dstructs-array-dtype/-/dstructs-array-dtype-1.0.2.tgz#c368fb6e46229dfa2409f700cc43a209b480e76e"
+  integrity sha1-w2j7bkYinfokCfcAzEOiCbSA524=
+
+dstructs-cast-arrays@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/dstructs-cast-arrays/-/dstructs-cast-arrays-1.0.3.tgz#f2cba069ea7431dad5d779601a51d59976c2bc25"
+  integrity sha1-8sugaep0MdrV13lgGlHVmXbCvCU=
+  dependencies:
+    dstructs-array-constructors "^1.0.2"
+    dstructs-array-dtype "^1.0.2"
+    type-name "^1.0.1"
+    validate.io-array-like "^1.0.1"
+
+dstructs-matrix@^2.0.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/dstructs-matrix/-/dstructs-matrix-2.1.2.tgz#b49625600a20b421c609d1911bb1d838290747da"
+  integrity sha1-tJYlYAogtCHGCdGRG7HYOCkHR9o=
+  dependencies:
+    compute-dtype "^1.0.0"
+    compute-indexspace "^1.0.1"
+    dstructs-cast-arrays "^1.0.2"
+    utils-copy "^1.0.0"
+    validate.io-array "^1.0.6"
+    validate.io-contains "^1.0.0"
+    validate.io-function "^1.0.2"
+    validate.io-integer-primitive "^1.0.0"
+    validate.io-nan "^1.0.3"
+    validate.io-nonnegative-integer "^1.0.0"
+    validate.io-nonnegative-integer-array "^1.0.1"
+    validate.io-number-primitive "^1.0.0"
+    validate.io-string-primitive "^1.0.0"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -4230,6 +4320,11 @@ object-copy@^0.1.0:
     define-property "^0.2.5"
     kind-of "^3.0.3"
 
+object-keys@^1.0.9:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.0.tgz#11bd22348dd2e096a045ab06f6c85bcc340fa032"
+  integrity sha512-6OO5X1+2tYkNyNEx6TsCxEqFfRWaqx6EtMiSbGrw8Ob8v9Ne+Hl8rBAgLBZn5wjEz3s/s6U1WXFUFOcxxAwUpg==
+
 object-visit@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/object-visit/-/object-visit-1.0.1.tgz#f79c4493af0c5377b59fe39d395e41042dd045bb"
@@ -4965,6 +5060,11 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
 
+regex-regex@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/regex-regex/-/regex-regex-1.0.0.tgz#9048a1eaeb870f4d480dabc76fc42cdcc0bc3a72"
+  integrity sha1-kEih6uuHD01IDavHb8Qs3MC8OnI=
+
 regexpu-core@^4.1.3:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/regexpu-core/-/regexpu-core-4.4.0.tgz#8d43e0d1266883969720345e70c275ee0aec0d32"
@@ -5611,6 +5711,16 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
 
+type-name@^1.0.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/type-name/-/type-name-1.1.0.tgz#ad9c3f7c330f5b2f08de7d79f56d2b9451e42b0e"
+  integrity sha1-rZw/fDMPWy8I3n159W0rlFHkKw4=
+
+type-name@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/type-name/-/type-name-2.0.2.tgz#efe7d4123d8ac52afff7f40c7e4dec5266008fb4"
+  integrity sha1-7+fUEj2KxSr/9/QMfk3sUmYAj7Q=
+
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
@@ -5738,10 +5848,49 @@ utile@0.2.x:
     ncp "0.4.x"
     rimraf "2.x.x"
 
+utils-copy-error@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/utils-copy-error/-/utils-copy-error-1.0.1.tgz#791de393c0f09890afd59f3cbea635f079a94fa5"
+  integrity sha1-eR3jk8DwmJCv1Z88vqY18HmpT6U=
+  dependencies:
+    object-keys "^1.0.9"
+    utils-copy "^1.1.0"
+
+utils-copy@^1.0.0, utils-copy@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/utils-copy/-/utils-copy-1.1.1.tgz#6e2b97982aa8cd73e1182a3e6f8bec3c0f4058a7"
+  integrity sha1-biuXmCqozXPhGCo+b4vsPA9AWKc=
+  dependencies:
+    const-pinf-float64 "^1.0.0"
+    object-keys "^1.0.9"
+    type-name "^2.0.0"
+    utils-copy-error "^1.0.0"
+    utils-indexof "^1.0.0"
+    utils-regex-from-string "^1.0.0"
+    validate.io-array "^1.0.3"
+    validate.io-buffer "^1.0.1"
+    validate.io-nonnegative-integer "^1.0.0"
+
+utils-indexof@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/utils-indexof/-/utils-indexof-1.0.0.tgz#20feabf09ef1018b523643e8380e7bc83ec61b5c"
+  integrity sha1-IP6r8J7xAYtSNkPoOA57yD7GG1w=
+  dependencies:
+    validate.io-array-like "^1.0.1"
+    validate.io-integer-primitive "^1.0.0"
+
 utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
+
+utils-regex-from-string@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/utils-regex-from-string/-/utils-regex-from-string-1.0.0.tgz#fe1a2909f8de0ff0d5182c80fbc654d6a687d189"
+  integrity sha1-/hopCfjeD/DVGCyA+8ZU1qaH0Yk=
+  dependencies:
+    regex-regex "^1.0.0"
+    validate.io-string-primitive "^1.0.0"
 
 uuid-js@^0.7.5:
   version "0.7.5"
@@ -5765,6 +5914,115 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+validate.io-array-like@^1.0.0, validate.io-array-like@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/validate.io-array-like/-/validate.io-array-like-1.0.2.tgz#7af9f7eb7b51715beb2215668ec5cce54faddb5a"
+  integrity sha1-evn363tRcVvrIhVmjsXM5U+t21o=
+  dependencies:
+    const-max-uint32 "^1.0.2"
+    validate.io-integer-primitive "^1.0.0"
+
+validate.io-array@^1.0.1, validate.io-array@^1.0.3, validate.io-array@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/validate.io-array/-/validate.io-array-1.0.6.tgz#5b5a2cafd8f8b85abb2f886ba153f2d93a27774d"
+  integrity sha1-W1osr9j4uFq7L4hroVPy2Tond00=
+
+validate.io-boolean-primitive@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/validate.io-boolean-primitive/-/validate.io-boolean-primitive-1.0.0.tgz#bb14c9cb8683c3c9f3d1329a95a7768e3ee29eb5"
+  integrity sha1-uxTJy4aDw8nz0TKalad2jj7inrU=
+
+validate.io-buffer@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/validate.io-buffer/-/validate.io-buffer-1.0.2.tgz#852d6734021914d5d13afc32531761e3720ed44e"
+  integrity sha1-hS1nNAIZFNXROvwyUxdh43IO1E4=
+
+validate.io-contains@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/validate.io-contains/-/validate.io-contains-1.0.0.tgz#bf09ba4f27c642507b0905dbb3a74a5277089cfe"
+  integrity sha1-vwm6TyfGQlB7CQXbs6dKUncInP4=
+  dependencies:
+    validate.io-array "^1.0.3"
+    validate.io-nan-primitive "^1.0.0"
+
+validate.io-function@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/validate.io-function/-/validate.io-function-1.0.2.tgz#343a19802ed3b1968269c780e558e93411c0bad7"
+  integrity sha1-NDoZgC7TsZaCaceA5VjpNBHAutc=
+
+validate.io-integer-primitive@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/validate.io-integer-primitive/-/validate.io-integer-primitive-1.0.0.tgz#a9aa010355fe8681c0fea6c1a74ad2419cadddc6"
+  integrity sha1-qaoBA1X+hoHA/qbBp0rSQZyt3cY=
+  dependencies:
+    validate.io-number-primitive "^1.0.0"
+
+validate.io-integer@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/validate.io-integer/-/validate.io-integer-1.0.5.tgz#168496480b95be2247ec443f2233de4f89878068"
+  integrity sha1-FoSWSAuVviJH7EQ/IjPeT4mHgGg=
+  dependencies:
+    validate.io-number "^1.0.3"
+
+validate.io-matrix-like@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/validate.io-matrix-like/-/validate.io-matrix-like-1.0.2.tgz#5ec32a75d0889dac736dea68bdd6145b155edfc3"
+  integrity sha1-XsMqddCInaxzbepovdYUWxVe38M=
+
+validate.io-nan-primitive@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/validate.io-nan-primitive/-/validate.io-nan-primitive-1.0.0.tgz#475cc2d035d0baf2d009122d83ea291a32d7fb0c"
+  integrity sha1-R1zC0DXQuvLQCRItg+opGjLX+ww=
+
+validate.io-nan@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/validate.io-nan/-/validate.io-nan-1.0.3.tgz#d438e13868c9cbd37fdba12594de4d8fe14430a4"
+  integrity sha1-1DjhOGjJy9N/26EllN5Nj+FEMKQ=
+
+validate.io-nonnegative-integer-array@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/validate.io-nonnegative-integer-array/-/validate.io-nonnegative-integer-array-1.0.1.tgz#66330a665f5598b96f25f69081f81f632ea4db4f"
+  integrity sha1-ZjMKZl9VmLlvJfaQgfgfYy6k208=
+  dependencies:
+    validate.io-array "^1.0.3"
+    validate.io-nonnegative-integer "^1.0.0"
+
+validate.io-nonnegative-integer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/validate.io-nonnegative-integer/-/validate.io-nonnegative-integer-1.0.0.tgz#8069243a08c5f98e95413c929dfd7b18f3f6f29f"
+  integrity sha1-gGkkOgjF+Y6VQTySnf17GPP28p8=
+  dependencies:
+    validate.io-integer "^1.0.5"
+
+validate.io-number-primitive@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/validate.io-number-primitive/-/validate.io-number-primitive-1.0.0.tgz#d2e01f202989369dcf1155449564203afe584e55"
+  integrity sha1-0uAfICmJNp3PEVVElWQgOv5YTlU=
+
+validate.io-number@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/validate.io-number/-/validate.io-number-1.0.3.tgz#f63ffeda248bf28a67a8d48e0e3b461a1665baf8"
+  integrity sha1-9j/+2iSL8opnqNSODjtGGhZluvg=
+
+validate.io-object@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/validate.io-object/-/validate.io-object-1.0.4.tgz#dca01eceee390e110dbc2af843c81f7bf33a41ab"
+  integrity sha1-3KAezu45DhENvCr4Q8gfe/M6Qas=
+  dependencies:
+    validate.io-array "^1.0.1"
+
+validate.io-positive-integer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/validate.io-positive-integer/-/validate.io-positive-integer-1.0.0.tgz#7ed2d03b4c27558cc66a00aab0f0e921814a6582"
+  integrity sha1-ftLQO0wnVYzGagCqsPDpIYFKZYI=
+  dependencies:
+    validate.io-integer "^1.0.5"
+
+validate.io-string-primitive@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/validate.io-string-primitive/-/validate.io-string-primitive-1.0.1.tgz#b8135b9fb1372bde02fdd53ad1d0ccd6de798fee"
+  integrity sha1-uBNbn7E3K94C/dU60dDM1t55j+4=
 
 vary@~1.1.2:
   version "1.1.2"

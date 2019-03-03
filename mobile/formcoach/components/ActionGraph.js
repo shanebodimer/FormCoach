@@ -9,26 +9,23 @@ export default class ActionGraph extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      x: [],
-      y: [],
-      z: []
+      gMag: [],
+      aMag: []
     };
 
-    let x = [];
-    let y = [];
-    let z = [];
+    let gMag = [];
+    let aMag = [];
+    // let z = [];
 
     if (this.props.data !== []) {
       for (var i = 0; i < this.props.data.length; i++) {
-        x.push(this.props.data[i]["x"]);
-        y.push(this.props.data[i]["y"]);
-        z.push(this.props.data[i]["z"]);
+        gMag.push(this.props.data[i]["gMag"]);
+        aMag.push(this.props.data[i]["aMag"]);
       }
 
       this.state = {
-        x: x,
-        y: y,
-        z: z
+        gMag: aMag,
+        aMag: gMag
       };
     }
   }
@@ -38,33 +35,22 @@ export default class ActionGraph extends React.Component {
         <View style={{ height: 100 }}>
           <LineChart
             style={{ flex: 1 }}
-            data={this.state.x}
+            data={this.state.gMag}
             contentInset={{ top: 10, bottom: 10 }}
+            curve={shape.curveNatural}
             svg={{
               strokeWidth: 2,
               stroke: "#647ACB"
             }}
-          >
-            <Grid />
-          </LineChart>
-          <LineChart
-            style={StyleSheet.absoluteFill}
-            data={this.state.y}
-            contentInset={{ top: 10, bottom: 10 }}
-            curve={shape.curveNatural}
-            svg={{
-              strokeWidth: 2,
-              stroke: "#D64545"
-            }}
           />
           <LineChart
             style={StyleSheet.absoluteFill}
-            data={this.state.z}
+            data={this.state.aMag}
             contentInset={{ top: 10, bottom: 10 }}
             curve={shape.curveNatural}
             svg={{
               strokeWidth: 2,
-              stroke: "#E9B949"
+              stroke: "green"
             }}
           />
         </View>
@@ -77,28 +63,18 @@ export default class ActionGraph extends React.Component {
                 size={12}
                 color={"#647ACB"}
               />{" "}
-              X
+              Rotation
             </Text>
             <Text style={styles.keyItem}>
               <Ionicons
                 name={"ios-radio-button-on"}
                 size={12}
-                color={"#D64545"}
+                color={"green"}
               />{" "}
-              Y
-            </Text>
-            <Text style={styles.keyItem}>
-              <Ionicons
-                name={"ios-radio-button-on"}
-                size={12}
-                color={"#E9B949"}
-              />{" "}
-              Z
+              Acceleration
             </Text>
           </View>
-          <View>
-            <Text style={styles.feedback}>Good form!</Text>
-          </View>
+          <View>{/* <Text style={styles.feedback}>Good form!</Text> */}</View>
         </View>
         {/* <Text>{JSON.stringify(this.props.data)}</Text> */}
       </View>

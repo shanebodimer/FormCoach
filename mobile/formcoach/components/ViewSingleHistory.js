@@ -28,31 +28,30 @@ export default class ViewSingleHistory extends React.Component {
     let id = navigation.getParam("id", "no-sport-selected");
 
     // Get collection
-    axios
-      .get(`https://formcoach.appspot.com/api/capture/${id}`)
-      .then(response => {
-        // turn actions into array
-        //   let actions = response.data.actions
-
-        var actions = Object.keys(response.data.actions).map(function(key) {
-          return [Number(key), response.data.actions[key]];
-        });
-        actions.pop();
-        console.log(actions);
-        // Update state
-        this.setState({
-          raw: JSON.stringify(actions),
-          history: response.data,
-          title:
-            response.data.sport.charAt(0).toUpperCase() +
-            response.data.sport.slice(1),
-          seconds: response.data.date._seconds,
-          actions: actions
-        });
+    axios.get(`https://bluetrace.tech/api/capture/${id}`).then(response => {
+      // turn actions into array
+      //   let actions = response.data.actions
+      var actions = Object.keys(response.data.actions).map(function(key) {
+        return [Number(key), response.data.actions[key]];
       });
+      actions.pop();
+
+      // Update state
+      this.setState({
+        raw: JSON.stringify(actions),
+        history: response.data,
+        title:
+          response.data.sport.charAt(0).toUpperCase() +
+          response.data.sport.slice(1),
+        seconds: response.data.date._seconds,
+        actions: actions
+      });
+    });
   }
   render() {
     const { navigate } = this.props.navigation;
+    let { navigation } = this.props;
+    let id = navigation.getParam("id", "no-sport-selected");
 
     return (
       <ScrollView style={styles.container}>
@@ -66,7 +65,7 @@ export default class ViewSingleHistory extends React.Component {
           </Text>
         </TouchableOpacity>
         <Text style={styles.title}>{this.state.title}</Text>
-        <Text style={styles.date}>
+        <Text style={styles.dateUpper}>
           Recorded{" "}
           {this.state.seconds !== 0 &&
             moment
@@ -74,6 +73,8 @@ export default class ViewSingleHistory extends React.Component {
               .format("MMMM Do hh:mma")
               .toString()}
         </Text>
+        <Text style={styles.date}>Activity ID: {id}</Text>
+
         {/* <Text>{this.state.raw}</Text> */}
         {/* Actions */}
 
@@ -95,7 +96,9 @@ export default class ViewSingleHistory extends React.Component {
         </View>
         <View style={styles.action}>
           <ActionGraph />
+                 
         </View> */}
+        {/* <View style={{ height: 80 }} /> */}
 
         {/* Space */}
         <View style={{ height: 80 }} />
@@ -119,8 +122,13 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#002c6e"
   },
-  date: {
+  dateUpper: {
     fontSize: 20,
+    color: "#002c6e",
+    marginBottom: 5
+  },
+  date: {
+    fontSize: 12,
     color: "#002c6e",
     marginBottom: 30
   },
